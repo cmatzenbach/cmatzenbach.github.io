@@ -23,16 +23,30 @@ p {
 }
 
 /* Nav & Footer styles */
+nav {
+    min-height: 90px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-color: rgba(135, 135, 135, .8);
+    border-width: 0 0 1px;
+    box-shadow: 0 2px 4px 0 #777777;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0 px;
+    padding: 0px;
     list-style: none;
     font-weight: bold;
     float:right;
 }
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20 px;
+    margin-right: 20px;
 }
 nav ul li a {
     padding: 0 30px;
