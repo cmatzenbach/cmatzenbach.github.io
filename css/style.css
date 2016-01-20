@@ -1,7 +1,7 @@
 /* Global styles */
 body {
     margin: 91px auto;
-    width: 70%;
+    width: 81%;
     background-color:#303133;
 }
 a {
@@ -9,12 +9,14 @@ a {
     color: inherit;
 }
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2.25em;
+    line-height: 2.38em;
     font-family: 'Oxygen', sans-serif;
-    color:#ff0000;
+    color:#fff;
+    text-align: center;
 }
 p {
     font-size: 1.5em;
@@ -26,6 +28,12 @@ p {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display:inline-block;
+    display:inline-block;
 }
 
 
@@ -91,6 +99,23 @@ ul.posts li {
     list-style: none;
 }
 
+
+/* Website Portfolio */
+.web-holder {
+    display: inline-table;
+    position: relative;
+}
+.web-linger {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.web-holder:hover .web-linger {
+    opacity: 1;
+}
 
 /* Body container */
 div.container {
