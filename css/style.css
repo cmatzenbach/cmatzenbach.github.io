@@ -6,7 +6,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: #999;
+    /*color: #999;*/
 }
 a:hover {
     text-decoration: underline;
@@ -21,32 +21,47 @@ p {
     line-height: 1.4em;
     color: #fff;
 }
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 
 /* Nav & Footer styles */
-nav {
-    min-height: 90px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid transparent;
-    border-color: rgba(135, 135, 135, .8);
-    border-width: 0 0 1px;
-    box-shadow: 0 2px 4px 0 #777777;
+#nav-wrap {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 10;
+    margin-bottom: 20px;
+    background-color: #545658;
+    text-align: center;
+}
+nav { 
+    position: relative;
+    padding: 26px 0 22px;
+    margin: 0;
+    background: none;
+    border: none;;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    float: none;
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background: none;
     list-style: none;
-    font-weight: bold;
-    float:right;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    color: #fff;
+    list-style-type: disc;
 }
 nav ul li a {
     padding: 0 30px;
@@ -63,8 +78,26 @@ ul.posts li {
     list-style: none;
 }
 
+
 /* Body container */
 div.container {
     clear: right;
 }
 
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1220px) {
+  .container {
+    max-width: 1170px;
+  }
+}
