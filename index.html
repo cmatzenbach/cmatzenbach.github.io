@@ -4,26 +4,37 @@
 		<title>Chris Matzenbach</title>
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
 	</head>
-	<body>
+	<body ng-app>
       <div id="nav-wrap">
         <div class="container">
-		  <nav>
+		  <nav class="{{active}}" ng-click="$event.preventDefault()">
     		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
+        		<li><a href="#" class="about" ng-click="active='about'">About</a></li>
+	        	<li><a href="#portfolio" class="portfolio" ng-click="active='portfolio'">Portfolio</a></li>
+        		<li><a href="#skills" class="skills" ng-click="active='skills'">Skills</a></li>
+        		<li><a href="#contact" class="contact" ng-click="active='contact'">Contact</a></li>
     		</ul>
 		  </nav>
         </div>
       </div>
-      <div class="container">
+      <div>
     		<div class="blurb">
         		<h1>Hi there, I'm Hank Quinlan!</h1>
 				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
     		</div><!-- /.blurb -->
 	  </div><!-- /.container -->
+      <div>
+      <!--<p ng-hide="active">Please click a menu item</p>-->
+	  <p ng-show="active"><b>{{active}}</b></p>
+        <div class="web-holder">  
+          <div class="web-linger"></div><img src="images/ahr-site-505.png" class="img-responsive"/>
+        </div>
+        <div class="web-holder">
+          <div class="web-linger"></div><img src="images/allstate-site-505.png" class="img-responsive" />
+        </div>    
+      </div>
 	  <footer>
     		<ul>
         		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
