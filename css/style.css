@@ -6,14 +6,14 @@ body {
 }
 a {
     text-decoration: none;
-    /*color: #999;*/
+    color: inherit;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Oxygen', sans-serif;
     color:#ff0000;
 }
 p {
@@ -48,7 +48,6 @@ nav {
     border: none;;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     float: none;
     position: relative;
     display: inline-block;
@@ -60,8 +59,22 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    border: none;
+    border-radius: 0;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-transform: lowercase;
     color: #fff;
-    list-style-type: disc;
+    list-style-type: none;
+    text-shadow: 1.5px 1.5px 2.5px #333639;
+}
+nav ul li:before {
+    content: "• ";
+    color: #fff; /* or whatever color you prefer */
+}
+nav ul li:first-child:before {
+    content: "";
 }
 nav ul li a {
     padding: 0 30px;
