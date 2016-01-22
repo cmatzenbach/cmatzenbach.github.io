@@ -1,8 +1,15 @@
 /* Global styles */
 body {
-    margin: 91px auto;
-    width: 81%;
+    margin:0;
+}
+section {
+    width: 100%;
+}
+section.top {
+    margin-top:75px;
     background-color:#303133;
+    padding-top:30px;
+    padding-bottom: 30px;
 }
 a {
     text-decoration: none;
@@ -44,7 +51,6 @@ p {
     right: 0;
     left: 0;
     z-index: 10;
-    margin-bottom: 20px;
     background-color: #545658;
     text-align: center;
 }
@@ -53,7 +59,7 @@ nav {
     padding: 26px 0 22px;
     margin: 0;
     background: none;
-    border: none;;
+    border: none;
 }
 nav ul, footer ul {
     float: none;
@@ -104,6 +110,14 @@ ul.posts li {
 .web-holder {
     display: inline-table;
     position: relative;
+    width: 505px;
+    height: 248px;
+}
+#ahr {
+    background-image: url("../images/ahr-site-505.png");
+}
+#cvs {
+    background-image: url("../images/allstate-site-505.png");
 }
 .web-linger {
     background: rgba(0, 0, 0, 0.4);
@@ -138,4 +152,16 @@ div.container {
   .container {
     max-width: 1170px;
   }
+}
+.blurb {
+    text-align: center;
+}
+
+.box {
+    box-sizing: border-box;
+    position: relative;
+    width:50%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
 }
