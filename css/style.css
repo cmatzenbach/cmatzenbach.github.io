@@ -1,4 +1,7 @@
 /* Global styles */
+* {
+    font-family: 'Roboto', sans-serif;
+}
 body {
     margin:0;
 }
@@ -6,7 +9,7 @@ section {
     width: 100%;
 }
 section.top {
-    margin-top:75px;
+    /*margin-top:75px;*/
     background-color:#303133;
     padding-top:30px;
     padding-bottom: 30px;
@@ -21,7 +24,6 @@ a:hover {
 h1 {
     font-size: 2.25em;
     line-height: 2.38em;
-    font-family: 'Oxygen', sans-serif;
     color:#fff;
     text-align: center;
 }
@@ -75,7 +77,6 @@ nav ul li, footer ul li {
     margin-right: 20px;
     border: none;
     border-radius: 0;
-    font-family: 'Oxygen', sans-serif;
     font-size: 1.2em;
     line-height: 1.5em;
     text-transform: lowercase;
@@ -105,19 +106,58 @@ ul.posts li {
     list-style: none;
 }
 
+/* About */
+#about {
+    overflow: auto;
+    height: 760px;
+}
+.background {
+    height: 760px;
+    background-image: url(https://cloud.githubusercontent.com/assets/15268289/12541527/641222b8-c2e6-11e5-98e6-20d6772dbbef.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 760px;
+    background-position: center bottom;
+    background-size: cover;
+}
+#about blurb {
+    margin-top: 15%;
+}
 
 /* Website Portfolio */
+#portfolio {
+    overflow: auto;
+    margin-bottom:25px;
+}
+#portfolio h1, #portfolio p {
+    color:#545658;
+}
+ 
 .web-holder {
-    display: inline-table;
     position: relative;
     width: 505px;
-    height: 248px;
+    height: 216px; /* 366 */
+    margin: 20px;
+    box-sizing: border-box;
+    margin: 20px;
+    overflow: hidden;
+     -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111; 
 }
-#ahr {
-    background-image: url("../images/ahr-site-505.png");
+/*#ahr {
+    background-image: url("../images/ahr-site-505v2.png");
 }
 #cvs {
     background-image: url("../images/allstate-site-505.png");
+}
+#spp {
+    background-image: url("../images/spp-505.jpg");
+}
+#og {
+    background-image: url("../images/grainger-505.jpg");
 }
 .web-linger {
     background: rgba(0, 0, 0, 0.4);
@@ -129,8 +169,19 @@ ul.posts li {
 }
 .web-holder:hover .web-linger {
     opacity: 1;
+}*/
+.scrolldown img {
+  margin-top: 0px;
+  -webkit-transition: margin 1s ease;
+     -moz-transition: margin 1s ease;
+       -o-transition: margin 1s ease;
+      -ms-transition: margin 1s ease;
+          transition: margin 1s ease;
 }
-
+ 
+.scrolldown img:hover {
+  margin-top: -200px;
+}
 /* Body container */
 div.container {
     clear: right;
@@ -155,6 +206,8 @@ div.container {
 }
 .blurb {
     text-align: center;
+    padding: 0 6%;
+    z-index: 5;
 }
 
 .box {
