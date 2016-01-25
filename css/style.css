@@ -60,7 +60,7 @@ p {
     transition-duration: 0.8s;
 }
 .navfade {
-    background-color: #6B2F36 !important;
+    background-color: #363738 !important; /*maroon 6b2f36, dark blue 191E31*/
   -o-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   -ms-transition-duration: 0.8s;
@@ -69,7 +69,7 @@ p {
 }
 nav { 
     position: relative;
-    padding: 26px 0 22px;
+    padding: 18px 0 18px;
     margin: 0;
     background: none;
     border: none;
