@@ -111,6 +111,9 @@ ul.posts li {
     overflow: auto;
     height: 760px;
 }
+#about .blurb {
+    margin-top: 15%;
+}
 .background {
     height: 760px;
     background-image: url(https://cloud.githubusercontent.com/assets/15268289/12541527/641222b8-c2e6-11e5-98e6-20d6772dbbef.jpg);
