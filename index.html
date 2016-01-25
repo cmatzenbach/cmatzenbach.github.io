@@ -4,6 +4,7 @@
 		<title>Chris Matzenbach</title>
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
         <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
 	</head>
 	<body ng-app>
@@ -11,7 +12,7 @@
         <div class="container">
 		  <nav class="{{active}}" ng-click="$event.preventDefault()">
     		<ul>
-        		<li><a href="#" class="about" ng-click="active='about'">About</a></li>
+        		<li><a href="#about" class="about" ng-click="active='about'">About</a></li>
 	        	<li><a href="#portfolio" class="portfolio" ng-click="active='portfolio'">Portfolio</a></li>
         		<li><a href="#skills" class="skills" ng-click="active='skills'">Skills</a></li>
         		<li><a href="#contact" class="contact" ng-click="active='contact'">Contact</a></li>
@@ -19,21 +20,55 @@
 		  </nav>
         </div>
       </div>
-      <section class="top">    
-      <div>
-    		<div class="blurb">
+      <section class="top" id="about">  
+        <div class="background">
+            <div class="blurb">
         		<h1>Chris Matzenbach</h1>
                 <p>Front-end developer</p><p>Passionate abo web apps and design</p>
     		</div><!-- /.blurb -->
-	  </div><!-- /.container -->
+        </div>  
+    		
       </section>
-      <section>
+      <section id="portfolio">
         <div class="blurb">
-          <h1 style="color:#eee;">Portfolio</h1>  
+          <h1>Portfolio</h1>  
+          <p>Below are samples of websites I've designed for clients while working at A-Plus Meetings.  All were built on the CMS I co-developed for our data department.  </p>    
         </div>  
         <div class="box">
-          <a href="http://www.aplusmeetings.com/web/globalexpo2015">
-            <div class="web-holder" id="ahr">  
+          <a href="http://www.aplusmeetings.com/web/globalexpo2015" target="_blank">
+            <div class="web-holder scrolldown" id="ahr">
+               <img src="https://cloud.githubusercontent.com/assets/15268289/12541530/6418bdd0-c2e6-11e5-92d0-995a7fa61dff.png" class="webpreview" />
+               
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="http://www.aplusmeetings.com/web/ogconference2014" target="_blank">
+            <div class="web-holder scrolldown" id="ahr">
+               <img src="https://cloud.githubusercontent.com/assets/15268289/12541528/64135322-c2e6-11e5-9852-8cbc45cb420d.jpg" class="webpreview" />
+               
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="http://www.aplusmeetings.com/web/cvshealthbbe2015" target="_blank">
+            <div class="web-holder scrolldown" id="ahr">
+               <img src="https://cloud.githubusercontent.com/assets/15268289/12541529/6418165a-c2e6-11e5-8f34-59010f1a3fbc.jpg" class="webpreview" />
+               
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href="http://www.aplusmeetings.com/web/sppnsm2016/associate" target="_blank">
+            <div class="web-holder scrolldown" id="ahr">
+               <img src="https://cloud.githubusercontent.com/assets/15268289/12541531/6418dc52-c2e6-11e5-94b8-131681ea1f34.jpg" class="webpreview" />
+               
+            </div>
+          </a>
+        </div>
+        <!--<div class="box">
+          <a href="http://www.aplusmeetings.com/web/sppnsm2016">
+            <div class="web-holder" id="spp">  
                <div class="web-linger"></div>
             </div>
           </a>
@@ -45,6 +80,13 @@
             </div>    
           </a>
         </div>
+        <div class="box">
+          <a href="http://www.aplusmeetings.com/web/ogconference2014">
+            <div class="web-holder" id="og">  
+               <div class="web-linger"></div>
+            </div>
+          </a>
+        </div>-->
       </section>
 	  <footer>
     		<ul>
