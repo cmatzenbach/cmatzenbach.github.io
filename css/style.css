@@ -114,6 +114,9 @@ ul.posts li {
 #about .blurb {
     margin-top: 15%;
 }
+#about h1 {
+    font-size: 3.5em;
+}
 .background {
     height: 760px;
     background-image: url(https://cloud.githubusercontent.com/assets/15268289/12541527/641222b8-c2e6-11e5-98e6-20d6772dbbef.jpg);
@@ -126,9 +129,7 @@ ul.posts li {
     background-position: center bottom;
     background-size: cover;
 }
-#about blurb {
-    margin-top: 15%;
-}
+
 
 /* Website Portfolio */
 #portfolio {
