@@ -11,8 +11,6 @@ section {
 section.top {
     /*margin-top:75px;*/
     background-color:#303133;
-    padding-top:30px;
-    padding-bottom: 30px;
 }
 a {
     text-decoration: none;
@@ -23,7 +21,7 @@ a:hover {
 }
 h1 {
     font-size: 3.3em;
-    line-height: 1.6em;
+    line-height: 1.60em;
     color:#fff;
     text-align: center;
 }
@@ -53,8 +51,21 @@ p {
     right: 0;
     left: 0;
     z-index: 10;
-    background-color: #545658;
+    background-color: transparent; /*#545658*/
     text-align: center;
+    -o-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.navfade {
+    background-color: #6B2F36 !important;
+  -o-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
 }
 nav { 
     position: relative;
@@ -109,7 +120,18 @@ ul.posts li {
 /* About */
 #about {
     overflow: auto;
-    height: 760px;
+    height: 700px;
+}
+.background {
+    background-image: url(https://cloud.githubusercontent.com/assets/15268289/12541527/641222b8-c2e6-11e5-98e6-20d6772dbbef.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 700px;
+    background-position: center bottom;
+    background-size: cover;
 }
 #about .blurb {
     margin-top: 15%;
@@ -117,19 +139,6 @@ ul.posts li {
 #about h1 {
     font-size: 3.5em;
 }
-.background {
-    height: 760px;
-    background-image: url(https://cloud.githubusercontent.com/assets/15268289/12541527/641222b8-c2e6-11e5-98e6-20d6772dbbef.jpg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 760px;
-    background-position: center bottom;
-    background-size: cover;
-}
-
 
 /* Website Portfolio */
 #portfolio {
@@ -148,8 +157,9 @@ ul.posts li {
     box-sizing: border-box;
     margin: 20px;
     overflow: hidden;
-     -webkit-box-shadow: 5px 5px 5px #111;
-          box-shadow: 5px 5px 5px #111; 
+    border: 1px solid #545658;
+     -webkit-box-shadow: 5px 5px 5px #545658;
+          box-shadow: 5px 5px 5px #545658; 
 }
 /*#ahr {
     background-image: url("../images/ahr-site-505v2.png");
