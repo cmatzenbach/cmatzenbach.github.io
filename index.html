@@ -5,17 +5,16 @@
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
 	</head>
 	<body ng-app>
       <div id="nav-wrap">
         <div class="container">
 		  <nav class="{{active}}" ng-click="$event.preventDefault()">
     		<ul>
-        		<li><a href="#about" class="about" ng-click="active='about'">About</a></li>
-	        	<li><a href="#portfolio" class="portfolio" ng-click="active='portfolio'">Portfolio</a></li>
-        		<li><a href="#skills" class="skills" ng-click="active='skills'">Skills</a></li>
-        		<li><a href="#contact" class="contact" ng-click="active='contact'">Contact</a></li>
+        		<li><a href="#about">About</a></li>
+	        	<li><a href="#portfolio-jump">Portfolio</a></li>
+        		<li><a href="#skills">Skills</a></li>
+        		<li><a href="#contact">Contact</a></li>
     		</ul>
 		  </nav>
         </div>
@@ -23,12 +22,13 @@
       <section class="top" id="about">  
         <div class="background">
             <div class="blurb">
-        		<h1>Chris Matzenbach</h1>
+        		<h1>Christopher Matzenbach</h1>
                 <p>Front-end developer</p><p>Passionate abo web apps and design</p>
     		</div><!-- /.blurb -->
         </div>  
-    		
       </section>
+        
+      <a name="portfolio-jump"></a>   
       <section id="portfolio">
         <div class="blurb">
           <h1>Portfolio</h1>  
@@ -37,7 +37,7 @@
         <div class="box">
           <a href="http://www.aplusmeetings.com/web/globalexpo2015" target="_blank">
             <div class="web-holder scrolldown" id="ahr">
-               <img src="https://cloud.githubusercontent.com/assets/15268289/12541530/6418bdd0-c2e6-11e5-92d0-995a7fa61dff.png" class="webpreview" />
+               <img src="../images/ahr-site-505.png" class="webpreview" />
                
             </div>
           </a>
@@ -45,7 +45,7 @@
         <div class="box">
           <a href="http://www.aplusmeetings.com/web/ogconference2014" target="_blank">
             <div class="web-holder scrolldown" id="ahr">
-               <img src="https://cloud.githubusercontent.com/assets/15268289/12541528/64135322-c2e6-11e5-9852-8cbc45cb420d.jpg" class="webpreview" />
+               <img src="../images/grainger-505.jpg" class="webpreview" />
                
             </div>
           </a>
@@ -53,7 +53,7 @@
         <div class="box">
           <a href="http://www.aplusmeetings.com/web/cvshealthbbe2015" target="_blank">
             <div class="web-holder scrolldown" id="ahr">
-               <img src="https://cloud.githubusercontent.com/assets/15268289/12541529/6418165a-c2e6-11e5-8f34-59010f1a3fbc.jpg" class="webpreview" />
+               <img src="../images/cvs-505.jpg" class="webpreview" />
                
             </div>
           </a>
@@ -61,7 +61,7 @@
         <div class="box">
           <a href="http://www.aplusmeetings.com/web/sppnsm2016/associate" target="_blank">
             <div class="web-holder scrolldown" id="ahr">
-               <img src="https://cloud.githubusercontent.com/assets/15268289/12541531/6418dc52-c2e6-11e5-94b8-131681ea1f34.jpg" class="webpreview" />
+               <img src="../images/spp-505.jpg" class="webpreview" />
                
             </div>
           </a>
@@ -94,5 +94,20 @@
         		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
 			</ul>
 	  </footer>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script type="text/javascript">
+(function($) {          
+     $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 100) {
+            $("#nav-wrap").addClass("navfade");
+        } else {
+            $("#nav-wrap").removeClass("navfade");
+        }
+    });
+});
+})(jQuery);
+      </script>    
 	</body>
 </html>
