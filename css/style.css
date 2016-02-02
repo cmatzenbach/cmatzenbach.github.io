@@ -213,6 +213,14 @@ div.container {
     max-width: 970px;
   }
 }
+@media (max-width: 1060px) {
+    div.box {
+        width:100%;
+    }
+    .web-holder {
+        margin: 20px auto;
+    }
+}
 @media (min-width: 1220px) {
   .container {
     max-width: 1170px;
