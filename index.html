@@ -114,9 +114,9 @@ console.log(webimgsbig);
 var webimgs = $('.webpreview');
 console.log(webimgs);
 function checkSize(){
-    if ($webimgs[0].css("z-index") == "4" ){
+    if (webimgs[0].css("z-index") == "4" ){
 	for (var i = 0; i < webimgs.length; i++) {
-		$webimgs[i].attr('src',$webimgsbig[i]);
+		webimgs[i].attr('src',webimgsbig[i]);
 		console.log("WORKING");
         }
     }
