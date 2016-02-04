@@ -98,6 +98,7 @@
       <script type="text/javascript">
 (function($) {          
      $(document).ready(function () {
+      checkSize();
       $(window).scroll(function () {
         if ($(document).scrollTop() > 100) {
             $("#nav-wrap").addClass("navfade");
@@ -105,8 +106,6 @@
             $("#nav-wrap").removeClass("navfade");
         }
     });
-	 checkSize();
-
     // run test on resize of the window
     $(window).resize(checkSize);
 });
