@@ -226,6 +226,16 @@ div.container {
     max-width: 1170px;
   }
 }
+@media (min-width: 1570px) {
+	.webpreview {
+		z-index: 4;
+	}
+	.web-holder {
+		width: 665px;
+		height: 288px;
+	}
+}
+	
 .blurb {
     text-align: center;
     padding: 0 6%;
