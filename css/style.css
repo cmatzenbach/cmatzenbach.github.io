@@ -191,6 +191,7 @@ ul.posts li {
        -o-transition: margin 1s ease;
       -ms-transition: margin 1s ease;
           transition: margin 1s ease;
+  width:100%;
 }
  
 .scrolldown img:hover {
@@ -227,9 +228,6 @@ div.container {
   }
 }
 @media (min-width: 1570px) {
-	.webpreview {
-		z-index: 4;
-	}
 	.web-holder {
 		width: 665px;
 		height: 288px;
