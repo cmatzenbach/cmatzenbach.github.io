@@ -44,7 +44,7 @@
         <div class="box">
           <a href="http://www.aplusmeetings.com/web/ogconference2014" target="_blank">
             <div class="web-holder scrolldown" id="ahr">
-               <img src="https://cloud.githubusercontent.com/assets/15268289/12541528/64135322-c2e6-11e5-9852-8cbc45cb420d.jpg" class="webpreview" />
+               <img src="https://cloud.githubusercontent.com/assets/15268289/12825578/0dd24a24-cb45-11e5-9450-65a25e282060.jpg" class="webpreview" />
                
             </div>
           </a>
@@ -52,7 +52,7 @@
         <div class="box">
           <a href="http://www.aplusmeetings.com/web/cvshealthbbe2015" target="_blank">
             <div class="web-holder scrolldown" id="ahr">
-               <img src="https://cloud.githubusercontent.com/assets/15268289/12541529/6418165a-c2e6-11e5-8f34-59010f1a3fbc.jpg" class="webpreview" />
+               <img src="https://cloud.githubusercontent.com/assets/15268289/12825592/1ef42ad4-cb45-11e5-9d47-302c2fbda890.jpg" class="webpreview" />
                
             </div>
           </a>
@@ -60,7 +60,7 @@
         <div class="box">
           <a href="http://www.aplusmeetings.com/web/sppnsm2016/associate" target="_blank">
             <div class="web-holder scrolldown" id="ahr">
-               <img src="https://cloud.githubusercontent.com/assets/15268289/12541531/6418dc52-c2e6-11e5-94b8-131681ea1f34.jpg" class="webpreview" />
+               <img src="https://cloud.githubusercontent.com/assets/15268289/12825598/24d3a0c4-cb45-11e5-876d-5372583cc9c5.jpg" class="webpreview" />
                
             </div>
           </a>
@@ -98,7 +98,6 @@
       <script type="text/javascript">
 (function($) {          
      $(document).ready(function () {
-      checkSize();
       $(window).scroll(function () {
         if ($(document).scrollTop() > 100) {
             $("#nav-wrap").addClass("navfade");
@@ -106,21 +105,7 @@
             $("#nav-wrap").removeClass("navfade");
         }
     });
-    // run test on resize of the window
-    $(window).resize(checkSize);
 });
-var webimgsbig = ["https://cloud.githubusercontent.com/assets/15268289/12824944/b5c2af70-cb41-11e5-9410-8fadb5f62a3c.jpg","https://cloud.githubusercontent.com/assets/15268289/12825578/0dd24a24-cb45-11e5-9450-65a25e282060.jpg","https://cloud.githubusercontent.com/assets/15268289/12825592/1ef42ad4-cb45-11e5-9d47-302c2fbda890.jpg","https://cloud.githubusercontent.com/assets/15268289/12825598/24d3a0c4-cb45-11e5-876d-5372583cc9c5.jpg"];
-console.log(webimgsbig);
-var webimgs = $('.webpreview');
-console.log(webimgs);
-function checkSize(){
-    if ($('img.webpreview').css("z-index") == "4" ){
-	for (var i = 0; i < webimgs.length; i++) {
-		$(webimgs[i]).attr('src', webimgsbig[i]);
-		console.log("WORKING");
-        }
-    }
-}
 })(jQuery);
       </script>    
 	</body>
