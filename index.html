@@ -4,25 +4,27 @@
 		<title>Chris Matzenbach</title>
 		<link rel="stylesheet" type="text/css" href="/css/style.css" />
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
-	<body ng-app>
+	<body>
       <div id="nav-wrap">
         <div class="container">
-		  <nav class="{{active}}" ng-click="$event.preventDefault()">
+		  <nav>
     		<ul>
 	        	<li><a href="#portfolio-jump">Portfolio</a></li>
-        		<li><a href="#skills">Skills</a></li>
-        		<li><a href="#contact">Contact</a></li>
+        		<li><a href="#skills-jump">Skills</a></li>
+        		<li><a href="#contact-jump">Contact</a></li>
     		</ul>
 		  </nav>
         </div>
       </div>
+        
       <section class="top" id="about">  
         <div class="background">
             <div class="blurb">
         		<h1>Christopher Matzenbach</h1>
-                <p>Front-end developer<br />Passionate abo web apps and design</p>
+                <p>Front-end developer<br />Bringing webpages to life</p>
     		</div><!-- /.blurb -->
         </div>  
       </section>
@@ -31,68 +33,92 @@
       <section id="portfolio">
         <div class="blurb">
           <h1>Portfolio</h1>  
-          <p>Below are samples of websites I've designed for clients while working at A-Plus Meetings.  All were built on the CMS I co-developed for our data department.  </p>    
+          <p>Below are samples of websites I've designed for clients while working at my current position.  All were built on the CMS I co-developed for our data department.  </p>    
         </div>  
-        <div class="box">
+        <div class="row">
+          <div class="box">
           <a href="http://www.aplusmeetings.com/web/globalexpo2015" target="_blank">
             <div class="web-holder scrolldown" id="ahr">
                <img src="https://cloud.githubusercontent.com/assets/15268289/12824944/b5c2af70-cb41-11e5-9410-8fadb5f62a3c.jpg" class="webpreview" />
                
             </div>
           </a>
+          </div>
+          <div class="box">
+              <p style="padding-top: 8%;"><span class="accent">Annual expo</span> for customers, exhibitors and associates. Mobile-friendly website that also dynamically displayed relevant agenda items based on links sent to attendees</p>  
+          </div>    
         </div>
-        <div class="box">
+        <div class="row">  
+         <div class="box">
           <a href="http://www.aplusmeetings.com/web/ogconference2014" target="_blank">
             <div class="web-holder scrolldown" id="og">
                <img src="https://cloud.githubusercontent.com/assets/15268289/12825578/0dd24a24-cb45-11e5-9450-65a25e282060.jpg" class="webpreview" />
                
             </div>
           </a>
-        </div>
-        <div class="box">
+          </div>
+          <div class="box">
+              <p style="padding-top: 12%;"><span class="accent">Biennial conference</span> connecting sellers and exhibitors in energy sector. Coded from scratch based off verbal direction from client</p>  
+          </div>  
+         </div>
+        <div class="row">  
+          <div class="box">
           <a href="http://www.aplusmeetings.com/web/allstatesde2015/apply" target="_blank">
             <div class="web-holder scrolldown" id="as">
-               <img src="https://cloud.githubusercontent.com/assets/15268289/12830623/42bb3764-cb5e-11e5-8cfb-4075a0178e97.jpg" class="webpreview" />
-               
+               <img src="https://cloud.githubusercontent.com/assets/15268289/12830623/42bb3764-cb5e-11e5-8cfb-4075a0178e97.jpg" class="webpreview" />       
             </div>
           </a>
         </div>
+        <div class="box">
+            <p style="padding-top: 8%;"><span class="accent">Annual entrepreneurial event</span> providing diverse suppliers the opportunity to network and meet directly with procurement reps. Concept created in conjunction with client's graphic design team</p>  
+         </div>
+        </div>
+        <div class="row">
         <div class="box">
           <a href="http://www.aplusmeetings.com/web/sppnsm2016/associate" target="_blank">
             <div class="web-holder scrolldown" id="spp">
                <img src="https://cloud.githubusercontent.com/assets/15268289/12825598/24d3a0c4-cb45-11e5-876d-5372583cc9c5.jpg" class="webpreview" />
-               
-            </div>
-          </a>
-        </div>
-        <!--<div class="box">
-          <a href="http://www.aplusmeetings.com/web/sppnsm2016">
-            <div class="web-holder" id="spp">  
-               <div class="web-linger"></div>
             </div>
           </a>
         </div>
         <div class="box">
-          <a href="www.aplusmeetings.com/web/allstatesde2015/apply">
-            <div class="web-holder" id="cvs">
-              <div class="web-linger"></div>
-            </div>    
-          </a>
-        </div>
-        <div class="box">
-          <a href="http://www.aplusmeetings.com/web/ogconference2014">
-            <div class="web-holder" id="og">  
-               <div class="web-linger"></div>
-            </div>
-          </a>
-        </div>-->
+            <p style="padding-top: 12%;"><span class="accent">Large national sales meeting</span> and vendor tradeshow.  Mobile-friendly site designed in turn-around time of less than two days</p>  
+         </div>    
+        </div>    
       </section>
-	  <footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-	  </footer>
+        
+      <a name="skills-jump"></a>   
+      <section id="skills">    
+      <div class="blurb">
+       <h1>Skills</h1>
+        <div class="skills-wrap">  
+        <ul>
+           <li><i class="material-icons">language</i>&nbsp; &nbsp;<span class="skill-desc">Web Design: HTML5 &amp; CSS3</span></li>
+            <li><i class="material-icons">important_devices</i>&nbsp; &nbsp;<span class="skill-desc">Front-End Programming: JavaScript</span></li>
+            <li><i class="material-icons">code</i>&nbsp; &nbsp;<span class="skill-desc">Back-End Programming: PHP</span></li>
+            <li><i class="material-icons">aspect_ratio</i>&nbsp; &nbsp;<span class="skill-desc">Frameworks: Bootstrap, AngularJS, JSON</span></li>
+            <li><i class="material-icons">open_in_browser</i>&nbsp; &nbsp;<span class="skill-desc">Libraries: jQuery</span></li>
+            
+        </ul> 
+        </div>    
+       </div>    
+      </section>
+        
+      <a name="contact-jump"></a>   
+      <section id="contact">    
+      <div class="blurb">
+       <h1>Contact</h1>
+       <div class="skills-wrap">  
+        <ul>
+           <li><i class="material-icons">account_box</i>&nbsp; &nbsp;<span class="skill-desc">Email: <a href="mailto:cmatzenbach@gmail.com">cmatzenbach@gmail.com</a></span></li>
+            <li><i class="material-icons">settings_phone</i>&nbsp; &nbsp;<span class="skill-desc">Phone: (614) 530-5922</span></li>
+        </ul>
+       </div>
+            
+       </div>    
+      </section>
+        
+        
       <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
       <script type="text/javascript">
