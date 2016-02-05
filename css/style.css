@@ -54,6 +54,7 @@ p, li {
 }
 .anchor {
     top: -20;
+    position: relative;
 }
 
 /* Nav & Footer styles */
