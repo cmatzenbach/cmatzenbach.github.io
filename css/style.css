@@ -25,10 +25,16 @@ h1 {
     color:#fff;
     text-align: center;
 }
-p {
+p, li {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #fff;
+}
+.material-icons {
+    font-size: 1.5em !important;
+    line-height: 1.4em !important;
+    color: #B7123E !important;
+    vertical-align: sub !important;
 }
 .container {
   margin-right: auto;
@@ -41,6 +47,10 @@ p {
     height: auto;
     display:inline-block;
     display:inline-block;
+}
+.row {
+    width: 100%;
+    overflow: auto;
 }
 
 
@@ -97,7 +107,7 @@ nav ul li, footer ul li {
 }
 nav ul li:before {
     content: "• ";
-    color: #fff; /* or whatever color you prefer */
+    color: #B7123E; /* or whatever color you prefer */
 }
 nav ul li:first-child:before {
     content: "";
@@ -145,10 +155,17 @@ ul.posts li {
     overflow: auto;
     margin-bottom:25px;
 }
-#portfolio h1, #portfolio p {
+#portfolio h1 {
+    color:#545658;
+    font-weight:500;
+}
+#portfolio p {
+    font-weight:300;
     color:#545658;
 }
- 
+#portfolio .row {
+    padding: 15px 0;
+} 
 .web-holder {
     position: relative;
     width: 505px;
@@ -161,29 +178,6 @@ ul.posts li {
      -webkit-box-shadow: 5px 5px 5px #545658;
           box-shadow: 5px 5px 5px #545658; 
 }
-/*#ahr {
-    background-image: url("../images/ahr-site-505v2.png");
-}
-#cvs {
-    background-image: url("../images/allstate-site-505.png");
-}
-#spp {
-    background-image: url("../images/spp-505.jpg");
-}
-#og {
-    background-image: url("../images/grainger-505.jpg");
-}
-.web-linger {
-    background: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    transition: all 0.5s;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-.web-holder:hover .web-linger {
-    opacity: 1;
-}*/
 .scrolldown img {
   margin-top: 0px;
   -webkit-transition: margin 1s ease;
@@ -197,6 +191,56 @@ ul.posts li {
 .scrolldown img:hover {
   margin-top: -200px;
 }
+
+/* Skills */
+#skills {
+    background-color: #D6D6D8;
+    overflow: auto;
+    padding-bottom: 35px;
+}
+#skills h1 {
+    color:#545658;
+    font-weight:500;
+}
+#skills p {
+    font-weight:300;
+    color:#545658; /* B7123E */
+}
+#skills ul, #contact ul {
+    text-align: left;
+}
+#skills ul li, #contact ul li {
+    font-weight:300;
+    color:#545658; /* B7123E */
+    list-style-type: none;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+.skill-desc {
+    font-size: 1.4em;
+}
+
+.skills-wrap {
+    display: table;
+    margin:0 auto; 
+        
+}
+
+/* Contact */
+#contact {
+    background-color: #ffffff;
+    overflow: auto;
+    margin-bottom: 35px;
+}
+#contact h1 {
+    color:#545658;
+    font-weight:500;
+}
+#contact p {
+    font-weight:300;
+    color:#545658; /* B7123E */
+}
+
 /* Body container */
 div.container {
     clear: right;
@@ -220,6 +264,9 @@ div.container {
     }
     .web-holder {
         margin: 20px auto;
+    }
+    .box p {
+        padding-top: 0 !important;
     }
 }
 @media (min-width: 1220px) {
@@ -248,3 +295,8 @@ div.container {
     padding-left: 5%;
     padding-right: 5%;
 }
+.accent {
+    color: #B7123E;
+}
+
+
