@@ -52,7 +52,9 @@ p, li {
     width: 100%;
     overflow: auto;
 }
-
+.anchor {
+    top: -20;
+}
 
 /* Nav & Footer styles */
 #nav-wrap {
