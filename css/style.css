@@ -1,6 +1,6 @@
 /* Global styles */
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;we
 }
 body {
     margin:0;
@@ -73,7 +73,8 @@ a.anchor {
     transition-duration: 0.8s;
 }
 .navfade {
-    background-color: #363738 !important; /*maroon 6b2f36, dark blue 191E31*/
+    /*background-color: #363738 !important; maroon 6b2f36, dark blue 191E31*/
+    background-color: rgba(54,55,56,0.9) !important;
   -o-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   -ms-transition-duration: 0.8s;
@@ -177,7 +178,7 @@ ul.posts li {
     box-sizing: border-box;
     margin: 20px;
     overflow: hidden;
-    border: 1px solid #545658;
+    /*border: 1px solid #545658;*/
      -webkit-box-shadow: 5px 5px 5px #545658;
           box-shadow: 5px 5px 5px #545658; 
 }
